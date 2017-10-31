@@ -1,0 +1,21 @@
+[package]
+name = "r-pyfio"
+version = "0.1.0"
+authors = ["matthew seyer <https://github.com/forensicmatt/r-pyfio>"]
+
+[lib]
+name = "rpyfio"
+crate-type = ["cdylib"]
+
+[dependencies]
+trace-error = "0.1.5"
+
+[dependencies.cpython]
+version = "*"
+default-features = false
+features = ["python27-sys"]
+
+[dependencies.rwinreg]
+version = "0.2.0"
+branch = "master"
+git = "https://github.com/forensicmatt/r-winreg"
