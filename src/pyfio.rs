@@ -5,6 +5,7 @@ use std::io::Seek;
 use std::io::SeekFrom;
 use std::io;
 
+#[derive(Debug)]
 pub struct PyFio {
     io_object: Box<PyObject>
 }
