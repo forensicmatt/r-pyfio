@@ -5,7 +5,6 @@ authors = ["matthew seyer <https://github.com/forensicmatt/r-pyfio>"]
 
 [lib]
 name = "rpyfio"
-crate-type = ["cdylib"]
 
 [dependencies]
 trace-error = "0.1.5"
@@ -14,8 +13,3 @@ trace-error = "0.1.5"
 version = "*"
 default-features = false
 features = ["python27-sys"]
-
-[dependencies.rwinreg]
-version = "0.2.0"
-branch = "master"
-git = "https://github.com/forensicmatt/r-winreg"
